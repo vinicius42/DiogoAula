@@ -94,7 +94,7 @@ app.delete("/products/:id", checkIfProductAlreadyExists, (req, res) => {
     products.splice(prodIndex, 1);
 
     return res.status(200).json({message: "Product deleted"});
-})
+});
 
 
 app.listen("3333")
